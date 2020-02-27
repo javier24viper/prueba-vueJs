@@ -3,8 +3,8 @@
   <h3>Registrarse</h3>
   <input type="text" placeholder="Email"><br>
   <input type="Password" placeholder="Password"><br>
-  <button>Conexión</button>
-  <p>Crear una cuenta</p>
+  <button @click="login">Conexión</button>
+  <p>Crear una cuenta <router-link to="/sign-up">crear</router-link></p>
   </div>
 </template>
 
@@ -14,7 +14,11 @@
         data(){
             return{};
         },
-        methods: {}
+        methods: {
+            login: function(){
+                this.$router.replace('home');
+            }
+        }
     }
 </script>
 <style scoped>

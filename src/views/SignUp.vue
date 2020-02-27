@@ -4,7 +4,7 @@
   <input type="text" placeholder="Email"><br>
   <input type="Password" placeholder="Password"><br>
   <button>Regístrate</button>
-  <span>o volver a iniciar sesión</span>
+  <span>o volver a inicio de sesión <router-link to="/login">volver</router-link></span>
   </div>
 </template>
 
